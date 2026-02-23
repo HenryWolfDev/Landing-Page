@@ -100,3 +100,47 @@ header {
     height: 35rem;
   }
 }
+/* INFORMATION-SECTION */
+
+.information-section {
+  text-align: center;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+
+  h2 {
+    padding-top: 2rem;
+    font-size: 3.6rem;
+    color: #1f2937;
+  }
+  .info-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+    .images-box {
+      max-width: 30rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 1rem;
+
+      .info-image {
+        width: 30rem;
+        height: 30rem;
+      }
+
+      span {
+        text-align: start;
+        font-size: 2rem;
+      }
+    }
+  }
+}
