@@ -14,12 +14,14 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  border-style: none;
   scroll-behavior: smooth;
 }
 
 html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.15rem;
 }
 
 .container {
@@ -28,12 +30,13 @@ html {
   margin: 0 auto;
 }
 
-header {
-  background-color: var(--dark-bg-hero-footer);
-}
-
 a {
   color: var(--hero-second-text);
+}
+
+/* HEADER */
+header {
+  background-color: var(--dark-bg-hero-footer);
 }
 
 .header {
@@ -41,7 +44,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  h1 {
+  span {
     color: var(--hero-main-text);
     font-size: 2.4rem;
   }
@@ -50,5 +53,50 @@ a {
     gap: 5rem;
     font-size: 1.8rem;
     color: var(--hero-second-text);
+  }
+}
+/* HERO-SECTION */
+.hero-section {
+  background-color: var(--dark-bg-hero-footer);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    h1 {
+      font-size: 4.8rem;
+      font-weight: 900;
+      color: var(--hero-main-text);
+    }
+
+    p {
+      font-size: 1.8rem;
+
+      color: var(--hero-second-text);
+    }
+
+    .sign-up-btn {
+      max-width: 20rem;
+      width: 100%;
+      font-size: 2rem;
+      padding: 1rem;
+      border-radius: 1rem;
+      color: var(--hero-main-text);
+      background-color: #3882f6;
+
+      cursor: pointer;
+    }
+  }
+
+  .logo {
+    width: 35rem;
+    height: 35rem;
   }
 }
